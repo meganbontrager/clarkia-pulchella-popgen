@@ -1,0 +1,357 @@
+\documentclass{article}
+
+\usepackage{natbib}
+\bibliographystyle{chicago}
+
+\usepackage{authblk}
+
+\usepackage{multirow}
+
+\usepackage{siunitx}
+
+\usepackage{array}
+
+\usepackage{url}
+
+\usepackage{pdflscape}
+
+\usepackage{color}
+
+\usepackage{lineno}
+\def\linenumberfont{\normalfont\small}
+
+\usepackage{longtable}
+
+\usepackage{booktabs}
+
+\usepackage{graphicx,subfig}
+
+
+\usepackage{geometry}
+\geometry{lmargin=1in}
+\geometry{bmargin=1in}
+\geometry{rmargin=1in}
+\geometry{tmargin=1in}
+
+\usepackage[bookmarks,bookmarksnumbered,%
+    allbordercolors={0.8 0.8 0.8},%
+    colorlinks=FALSE,%
+    ]{hyperref}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=justified,singlelinecheck=off}
+
+\usepackage{setspace}
+\doublespacing
+
+\usepackage{lineno}
+
+\newcommand{\beginsupplement}{%
+        \setcounter{table}{0}
+        \renewcommand{\thetable}{S\arabic{table}}%
+        \setcounter{figure}{0}
+        \renewcommand{\thefigure}{S\arabic{figure}}%
+     }
+
+\begin{document}
+
+\title{Genetic differentiation is determined by geographic distance in \textit{Clarkia pulchella}}
+\author[1,3]{Megan Bontrager}
+\author[2]{Amy L. Angert}
+\affil[1]{Department of Botany, University of British Columbia, Vancouver, British Columbia V6T 1Z4, Canada}
+\affil[2]{Departments of Botany and Zoology, University of British Columbia, Vancouver, British Columbia V6T 1Z4, Canada}
+\affil[3]{Author for correspondence (mgbontrager@gmail.com)}
+\date{}
+\maketitle
+
+\begin{center}
+Running title: Isolation by distance in \textit{C. pulchella}
+\end{center}
+
+\clearpage
+
+\linenumbers
+
+\section*{Abstract}
+
+Both environmental differences and geographic distances may contribute to the genetic differentiation of populations on the landscape. Understanding the relative importance of these drivers is of particular interest in the context of geographic range limits, as both swamping gene flow and lack of genetic diversity are hypothesized causes of range limits. We investigated the landscape genetic structure of 32 populations of the annual wildflower \textit{Clarkia pulchella} from across the species' geographic range in the interior Pacific Northwest. We tested whether climatic differences between populations influenced the magnitude of their genetic differentiation. We also investigated patterns of population structure and geographic gradients in genetic diversity. Contrary to our expectations, we found an increase in genetic diversity near the species' northern range edge. We found no notable contribution of climatic differences to genetic differentiation, indicating that any processes that might operate to differentiate populations based on temperature or precipitation are not affecting the putatively neutral loci in these analyses. Rather, these results support seed and pollen movement at limited distances relative to the species' range and that this movement and the subsequent incorporation of immigrants into the local gene pool are not influenced by temperature or precipitation similarities among populations. We found that populations in the northern and southern parts of the range tended to belong to distinct genetic groups and that central and eastern populations were admixed between these two groups. This pattern could be the result of a past or current geographic barrier associated with the Columbia Plateau, or it could be the result of spread from separate sets of refugia after the last glacial maximum. 
+
+
+\section*{Keywords}
+
+\textit{Clarkia}, isolation-by-distance, landscape genetics, population genetics, genetic diversity
+
+\section*{Introduction}
+
+Geographic distance is often a primary predictor of genetic differentiation among populations on the landscape. Populations that are near each other are often more genetically similar, while distant populations are often more divergent. This pattern arises when the dispersal distances of individuals and gametes are small relative to the distances separating populations; as a result, differences accumulate among populations due to drift faster than they are homogenized by gene flow \citep{slatkin1993isolation, wright1943isolation}. Isolation by distance is well-documented and prevalent \citep{sexton2014genetic} to the extent that it is a reasonable null expectation for how genetic differentiation is structured at geographic scales. 
+
+However, geographic distance is not the only factor that structures dispersal and realized gene flow among populations \citep{mcrae2006isolation, epps2005highways}. Not all geographic distances are equivalent in the extent to which they might facilitate or impede gene flow \citep{storfer2007putting}. Landscape features between populations may impose barriers to gene flow beyond those predicted by geographic distance. Gaps in suitable habitat may be large enough that very few instances of gene flow occur across them, leading to differentiation of the populations on either side. For example, \citet{reeves2014effect} found genetic differentiation between populations of \textit{Helianthus pumilus} that could be attributed to an unsuitable mountainous area interrupting the species' distribution. Other features of the landscape might act as corridors for the organisms themselves or for agents of gene flow (i.e. seed dispersers or pollinators). For example, wind and water flow along rivers may increase gene flow among populations situated along them \citep{lee2018population}. In these types of scenarios we expect to see deviations from a strict pattern of isolation by distance, and population genetic structure will be better described by membership in discrete groups on either side of a barrier in the former case, or by patterns of admixture or increased similarity in populations connected by corridors in the latter. 
+
+Environmental differences between occupied sites may also contribute to the magnitude of genetic differentiation between populations \citep{slatkin1973gene,wang2014isolation}. If populations are strongly locally adapted, then migrants that have moved between environments may be unable to survive to reproduction or may have low reproductive success \citep{nosil2005perspective}. In this case, realized gene flow may be low between different environments \citep{mosca2012geographical}. Similarly, vectors of gene flow such as pollinators and seed dispersers (or the organisms themselves, in the case of motile species) may have environmental preferences that lead to greater rates of gene flow among similar environments \citep{bolnick2009phenotype}.
+
+The current genetic structure of populations is also strongly influenced by past processes \citep{hewitt2004genetic}. In temperate regions including the Pacific Northwest, higher latitudes were glaciated until approximately 20,000 years ago \citep{booth2003cordilleran} and this affected the distribution of many species, leaving lasting signatures on their genetic structure \citep{brunsfeld2001comparative, shafer2010glaciers}. Species that previously had disjunct distributions---for example, those that occupied multiple refugia during glaciation---may exhibit multiple corresponding genetic clusters in the present day \citep{beatty2011phylogeographic,carstens2013model, sproul2015climate}. Populations that are the result of range expansions into previously glaciated areas may have lower levels of genetic diversity as a result of repeated founder events \citep{kuchta2005isolation, hewitt2004genetic}. These patterns may underlie (and sometimes confound) genetic structure that could also be attributed to isolation by distance or environment.
+
+Despite the accumulation of numerous case studies, it is still challenging to draw generalizations about the extent to which the genetic structure of a given species is likely to be determined by geographic vs.\ environmental differences. A recent meta-analysis \citep{sexton2014genetic} examined how the frequency of isolation by distance vs.\ by environment varied across broad taxonomic groups, and found that plants more frequently showed patterns of isolation by distance than vertebrates or invertebrates. However, in more than half of the plant species that displayed a pattern of isolation by distance, environmental similarity also contributed to genetic structure. In a small number of plant species, only environmental differences explained genetic structure. Although geography and environment may both have important effects on patterns of genetic differentiation, generalizations about when one will prevail over the other and what organismal traits determine their relative effect sizes remain elusive. The accumulation of more case studies and the development and use of more appropriate statistical methods will likely move this field forward \citep{wang2014isolation, bradburd2013disentangling}.
+
+The way that the landscape shapes genetic structure is of particular interest in the context of geographic range limits. Local adaptation may be constrained in range edge populations if these populations are inundated with gene flow from populations in dissimilar environments \citep{kirkpatrick1997evolution}. If populations are isolated by environmental differences, that might prevent swamping gene flow. Rather, gene flow between populations in similar environments could facilitate local adaptation by increasing adaptive genetic diversity \citep{sexton2011gene}. This might be of particular importance if species occupy spatially heterogeneous environments, where random dispersal would otherwise result in frequent gene flow between divergent environments. 
+
+In this study, we investigated whether environmental differences between populations of the annual wildflower \textit{Clarkia pulchella} contribute to their genetic differentiation, which we expected to also be strongly structured by geographic distances. Further, we explored whether patterns of genetic differentiation are better described by admixture among distinct genetic groups or continuous genetic differentiation across the landscape. We expected that topographic features, such as the Rocky Mountains, might be an impediment to the movement of seed dispersers and pollinators, and that this might result in disjunct genetic groups. Finally, we explored whether genetic diversity varies geographically in this species. We predicted lower levels of genetic diversity at high latitudes if this species has undergone a range expansion northward after the last glacial maximum.
+
+\section*{Methods}
+
+\subsection*{Study species}
+
+\textit{Clarkia pulchella} Pursh (Onagraceae) is a winter annual wildflower that grows east of the Cascade Mountains in the Pacific Northwest. It can be found in eastern Washington, eastern Oregon, Idaho, and western Montana (United States) and in southeastern British Columbia (Canada; \autoref{map_fig_popgen}). It grows in large populations (i.e., thousands of flowering individuals) on open, south-facing slopes from 100 to 2200 meters elevation, though the majority of populations are found between 500 and 1600 m. While temperature generally decreases and precipitation generally increases from south to north and west to east across the range of \textit{C. pulchella}, temperature and precipitation are also strongly influenced by elevation. Topographic complexity across the range creates large amounts of variation around geographic trends and appears to disrupt spatial autocorrelation in climate among populations of \textit{C. pulchella} (\autoref{clim_geo}). This species has small seeds (c.\ 1 mm long) that lack an obvious dispersal mechanism. Flowers are visited by a diverse array of pollinators, including solitary bees, bee flies, bumblebees, and occasionally hummingbirds (M. Bontrager, personal observation).
+
+\subsection*{Population selection, climate characterization, and seed collection}
+For this study, we selected populations that would allow us to decouple climatic and spatial axes of differentiation. For example, we wanted to include populations that were spatially near each other but climatically different and populations that were geographically distant but climatically similar. Monthly temperature and precipitation data from 1951-1980 for all populations were obtained from PRISM \citep{PRISM}. We calculated the average temperature across the months that encompass the \textit{C. pulchella} life cycle (September-July) and average precipitation when \textit{C. pulchella} is most likely to be water-limited (April-July) for each population. Based on field observations and common garden trials (Bontrager and Angert, in prep), we considered these to be good candidates for variables that might have the potential to generate patterns of isolation by environment via selection against migrants. We first considered a set of 40 populations that we had located, then narrowed that set down to 32 populations that maximized variation in the relationship between spatial proximity and climatic similarity (\autoref{map_fig_popgen}, \autoref{pops_tab}). In July of 2014, we collected seeds from 12 plants separated by at least 0.5 m in each of those populations. Seeds from 17 populations were grown in the greenhouse beginning in December of 2014, and seeds from the remaining 15 populations were grown in growth chambers beginning in February of 2016. 
+
+\subsection*{DNA Extraction}
+Tissue was harvested from the first cohort of plants in May 2015. Leaf or bud tissue was collected into 2 mL tubes on ice, then frozen at -80\si{\degree}C until DNA extraction. Tissue from the second cohort was collected onto dry ice in April 2016 and stored at -80\si{\degree}C until DNA extraction. DNA was extracted using DNeasy Plant Mini kits and DNeasy Plant 96 kits (Qiagen), following the protocol for frozen tissues. DNA extractions that did not have satisfactory 260/230 or 260/280 ratios were cleaned with ethanol precipitation. DNA was eluted and stored in 10mM Tris-HCl pH 8.
+
+\subsection*{Library preparation and sequencing}
+Libraries were prepared using 100 ng starting material. We prepared for two lanes of sequencing, with six individually barcoded samples from each population in each lane (191 or 192 individuals per lane, because we only had DNA of a high enough quality from a total 11 individuals from one population). Our library preparation protocol was based on \cite{poland2012development} with modification by M. Todesco, K. Ostevik, and B. Moyers (Rieseberg Lab, University of British Columbia). DNA was digested in a 20 \si{\micro\liter} reaction using 8 units each of the enzymes MspI and Pst I-HF (New England Biolabs) in the supplied buffer. Digestion was carried out for 5 hours at 37\si{\degree}C, followed by 20 minutes at 65\si{\degree}C. Reactions were then stored overnight at 4\si{\degree}C. Ligation was performed in a 40 \si{\micro\liter} reaction in the same buffer as the digestion with 200 units of T4 DNA ligase (New England Biolabs) using 192 barcoded adapters and 12 common adapters on the opposite end. Ligation was performed for 3 hours at 22\si{\degree}C followed by a 20 minute hold at 65\si{\degree}C. Reactions were then cleaned with 1.6 volumes of SPRI beads and two 80\% ethanol washes and resuspended in 12 \si{\micro\liter} of Tris-HCl pH 8.
+
+Amplification was carried out in 10 \si{\micro\liter} reactions using 4 \si{\micro\liter} of cleaned ligation product, Kapa HIFI HotStart master mix (Kapa Biosystems), and primers from \cite{poland2012development}. Amplification began at 98\si{\degree}C (30 s), followed by 14 cycles of 98\si{\degree}C (30 s), 62\si{\degree}C (20 s), 72\si{\degree}C (30 s), and a 72\si{\degree}C hold for 5 minutes. After amplification, samples were quantified using fluorometry, then each plate was pooled according to individual concentrations to yield a final product with equal amounts of library from each individual. This pooled library was run out on a 1.5\% agarose gel and bands containing fragments 400 to 600 bp long were excised and cleaned using a gel extraction kit (Qiagen). The eluted product was cleaned and concentrated using SPRI beads.
+
+Finally, we reduced the number of high copy fragments from our library using a protocol modified by M. Todesco from \cite{shagina2010normalization} and \cite{matvienko2013consequences}. We began with 480 ng of each library in a 3 \si{\micro\liter} volume. To this we added 1 \si{\micro\liter} of hybridization buffer (200 mM HEPES pH 7.5, 2M NaCl, 0.8 mM EDTA), covered the reaction with mineral oil, heated it to 98\si{\degree}C for 2 minutes, then held it at 78\si{\degree}C for 3 hours. We then added 5 \si{\micro\liter} of duplex specific nuclease buffer (0.1 M Tris pH 8, 10mM MgCl\textsubscript{2}, 2mM DTT) and incubated at 70\si{\degree}C for 5 minutes. We then added 0.2 \si{\micro\liter} of duplex specific nuclease and incubated at 70\si{\degree}C for another 15 minutes, then stopped the reaction with 10 \si{\micro\liter} of 10 mM EDTA. We then reamplified the library using the same reagents as above in a 25 \si{\micro\liter} reaction with 2-4 \si{\micro\liter} of template and cleaned again with SPRI beads. Libraries were stored at -20\si{\degree}C until sequencing. Libraries were sequenced with paired-end 100 bp reads on the Illumina HiSeq 2000 platform at the Biodiversity Research Centre at UBC.
+
+\subsection*{Alignment and SNP calling}
+
+Sequences were processed and aligned using components of the Stacks pipeline (version 1.40, \citealp{catchen2011stacks, catchen2013stacks}). Reads with uncalled bases or low quality scores (average quality in a 14-base sliding window $<$10) were discarded. Ten samples had far fewer reads than the rest and these were excluded prior to alignment. Paired end reads were pooled with first end reads, i.e. during alignment and SNP (single nucleotide polymorphism) detection the two ends of each read were treated as if they were independent loci (we later checked for linkage disequilibrium among SNPs). During initial ``stacking" and catalog building we allowed sequences to diverge at 3 bases, and set the minimum depth of coverage required to create a stack at 3 \citep{rochette2017deriving}. Modifications to these parameters did not result in substantial differences in values of pairwise F\textsubscript{ST} (data not shown). The maximum number of stacks per locus was set to 3, and gapped alignments were not allowed. We enabled the removal algorithm, which drops highly repetitive stacks (removes initial stacks that have $>$2 SD coverage relative to individual sample mean), and the deleveraging algorithm, which breaks up or removes over-merged sequences. Our catalog was built using all samples. We employed the rxstacks corrections module to correct or omit loci with putative sequencing errors, loci with low log-likelihoods ($<$-10), confounded loci, and loci with excess haplotypes.
+
+SNP tables were generated using the populations module of Stacks. Initial inspection of PCA plots using SNPRelate \citep{zheng2012high} revealed three individuals that were not clustering with the other individuals from their populations. We consider it more plausible that these represent mis-labeled samples in the field, greenhouse, or lab than long-distance migration events. Downstream analyses were performed without these individuals. Therefore, in our final dataset, seven populations had only 11 individuals, one population had only 10, one population had only 8, and the remaining 23 populations were each represented by 12 individuals. In our analyses we included only loci that had coverage of at least 12x in 75\% of individuals in 75\% of populations, with a minimum minor allele frequency of 0.05 and a maximum heterozygosity of 70\% across all populations. We checked that pairwise F\textsubscript{ST} was not sensitive to these parameter choices. In case of multiple SNPs occurring in a single locus, we kept just the first one. After applying these filters, 2983 SNPs were retained. Linkage disequilibrium was generally low among our loci (r\textsuperscript{2} $<$0.2 for 99.9\% of pairs of SNPs). F\textsubscript{ST} was calculated using the implementation of \citet{weir1984estimating} and expected heterozygosity (within-population gene diversity) was calculated using methods from \citet{nei1987molecular} in the R package hierfstat \citep{hierfstat}. Because populations varied in the average proportion of loci that were successfully genotyped (three populations had $<$60\% success; among all populations the median success rate was 78\% and the range was 23-92\%), we checked that expected heterozygosity did not correlate with genotyping success rate (r = 0.27, \textit{P} = 0.13).
+
+\subsection*{Quantifying isolation by environment vs.\ isolation by distance}
+
+We used BEDASSLE \citep{bradburd2013disentangling} to estimate the relative contributions of geographic distance and climatic differences to genetic differentiation. BEDASSLE is implemented in R \citep{Rcore}, and it employs a Markov chain Monte Carlo (MCMC) algorithm to estimate the relative effect sizes of geographic distance and environmental differences on covariance in allele frequencies among populations. As environmental covariates, we used pairwise differences in average September-July temperature and average spring/summer precipitation (April-July). We initially generated resistance-weighted distances between populations using projected habitat suitability (Chapter 1) as a conductance matrix, but these distances were highly correlated with actual geographic distances and did not produce better model fits in preliminary analyses, so we did not use them in these models. We estimated effect sizes of geography, temperature, and precipitation differences using all 32 populations, but also ran BEDASSLE for subsets consisting of populations clustered in the central and northern parts of the range (indicated in \autoref{pops_tab}) to see if we could detect effects of the environment that may be obscured or weakened at large geographic scales. Prior to analysis, we divided pairwise geographic distance and precipitation differences by their standard deviations so that these predictors were on a scale more similar to pairwise temperature differences. We ran these models for 10 million generations, and thinned the chains by sampling every 1000 generations. We visually inspected MCMC traces and marginal distributions to ensure that models reached stationary distributions. All results are reported after a burn-in of 20\%, with effect sizes back-transformed to the scale of the original data. We checked these results against partial Mantel tests of pairwise geographic, temperature, and precipitation differences on pairwise F\textsubscript{ST} using the R package phytools \citep{phytools}. We did not rely upon partial Mantel tests as our main analytical method because of their potential to have inflated Type I error rates \citep{guillot2013dismantling}.
+
+\subsection*{Assessment of spatially continuous vs.\ discrete genetic differentiation}
+
+We were interested in evaluating whether population structure was well-described by modelling populations as admixtures between multiple discrete genetic groups, as might be caused by geographic barriers (i.e., the Rocky Mountains) or historic phylogeographic processes. We evaluated how well models prescribing various numbers of discrete genetic groups described differentiation and similarity among our populations using conStruct \citep{bradburd2017inferring}. conStruct is implemented in R \citep{Rcore}, and is similar to the frequently-used program Structure \citep{pritchard2000inference} but allows genetic differentiation to increase with geographic distance between populations even when these populations draw from the same genetic groups. In the spatial implementation of this program, populations are composed of admixture from a user-specified number of discrete layers (K), and genetic similarity decays with geographic distance within each of these layers. We ran conStruct for 1000 iterations setting the number of layers to 1, 2, 3, 4, and 5. We compared the fits of each of these different parameterizations using cross-validation and by evaluating the contribution of each additional layer to the total covariance of these loci. For cross-validation, we fit models with subsets containing 90\% of loci and evaluated the resulting model fit by calculating the log likelihood of the remaining loci. We performed 100 replicate cross-validation runs. 
+
+\subsection*{Exploring spatial patterns in genetic diversity}
+
+We examined whether population genetic diversity (as estimated by expected heterozygosity) exhibited geographic trends. We used linear models in R \citep{Rcore} to test whether expected heterozygosity was predicted by latitude or by proximity to the range edge (as measured by the distance of a population to the nearest edge of a polygon drawn around all localities of the species; \autoref{map_fig_popgen}). 
+
+\section*{Results}
+\subsection*{Isolation by environment vs.\ geographic distance}
+
+Overall F\textsubscript{ST} among these populations is 0.135. Genetic differentiation between populations of \textit{Clarkia pulchella} is primarily structured by geographic distance, with no apparent contribution of the environmental variables that we have considered here (\autoref{fst_main_popgen}). The effect size of a temperature difference of one degree (C) relative to the effect of 100 km of geographic distance is 1.18 x 10\textsuperscript{-7} (95\% credible interval = 8.52 x 10\textsuperscript{-8} - 1.58 x 10\textsuperscript{-7}; \autoref{bedassle_main}A), and the effect of 10 mm of spring/summer precipitation difference relative to the effect of 100 km of geographic distance is 5.84 x 10\textsuperscript{-7} (95\% credible interval = 1.50 x 10\textsuperscript{-8} - 2.98 x 10\textsuperscript{-6}; \autoref{bedassle_main}B). The scales at which these ratios are presented are arbitrary, but they were chosen so that the range of values among populations is on the same order of magnitude: 100 km represents about one sixth of the maximum pairwise geographic distance, 1\si{\degree}C represents approximately one fourth of the maximum pairwise temperature difference, and 10 mm precipitation represents about one fourth of the maximum pairwise precipitation difference. The climatic effect sizes we found are so small that the effects of these variables can be considered nonexistent in terms of their biological importance. Effects of environmental differences did not emerge at smaller geographic scales in subsets of populations in the north (effect of temperature differences relative to geographic distance: 5.89 x 10\textsuperscript{-8} (8.61 x 10\textsuperscript{-9} - 1.14 x 10\textsuperscript{-7}), effect of precipitation differences relative to geographic distance: 9.73 x 10\textsuperscript{-6} (5.81 x 10\textsuperscript{-7} - 2.11 x 10\textsuperscript{-5}); \autoref{fst_north}) or center (effect of temperature: 2.34 x 10\textsuperscript{-7} (1.44 x 10\textsuperscript{-8} - 4.73 x 10\textsuperscript{-7}), effect of precipitation: 9.46 x 10\textsuperscript{-7} (3.06 x 10\textsuperscript{-8} - 4.80 x 10\textsuperscript{-6}); \autoref{fst_center}). These conclusions are consistent with the results of partial Mantel tests, in which only pairwise geographic distance is a significant predictor of pairwise F\textsubscript{ST} (\autoref{mantel}). 
+
+\subsection*{Genetic structure of populations}
+
+The genetic structure of these populations is explained slightly better by a model of admixture between two genetic groups than by a model of continuous genetic differentiation across space, as indicated by the increase in predictive accuracy in models where two layers were allowed rather than one (\autoref{construct_xval}). Northern populations primarily belong to one genetic group, while southern populations belong to another, and populations from mid-latitudes are a mix of the two (\autoref{construct_main}). Allowing more than two layers did not improve predictive accuracy (\autoref{construct_xval}). Note that populations east of the Rocky Mountains (populations D9, D10, and P12) never formed a separate group, regardless of the number of layers allowed (results not shown). Although models with two layers did have greater predictive accuracy than those with one, when K = 2 the amount of covariance contributed by the second layer was small relative to the first (\autoref{layer_contributions}). 
+
+\subsection*{Geographic trends in genetic diversity}
+
+Genetic diversity increases with latitude among these populations (estimate = 0.0104, SE = 0.0019, df = 30, \textit{P} $<$ 0.0001 , \autoref{het_map}A), but is not related to distance from the range edge (df = 30, \textit{P} = 0.811). Genetic diversity appears to be lower in populations in the southern half of the range, and also in populations near the eastern range edge, but is higher in central and northern populations (\autoref{het_map}B). 
+
+\section*{Discussion}
+
+We contrasted the relative effects of geographic vs. climatic distances on genetic differentiation in \textit{Clarkia pulchella}, examined whether geographic structure in this species could be described by assigning populations to distinct genetic groups, and tested for geographic gradients in genetic diversity. Our analyses revealed a genetic structure that is predominantly shaped by geographic distances between populations. In addition to this pattern of isolation by distance, populations partition into northern and southern groups, with admixed populations in the center of the range. Genetic diversity was highest in northern and central populations, resulting in a trend of increasing genetic diversity with latitude.
+
+\subsection*{Populations of \textit{Clarkia pulchella} are isolated by distance}
+
+At the scale of the geographic range in \textit{Clarkia pulchella}, isolation by distance is the dominant pattern. This likely reflects gene flow that is strongly restricted by geographic distances between populations. This is perhaps not surprising, given that this species has no obvious mechanism for seed dispersal and our best guess is that gene flow between populations is facilitated by occasional pollen movement by bumblebees, hummingbirds, and other floral visitors. In the case of an absence of climatically structured seed and pollen movement, selection against migrants and their offspring is the remaining mechanism that could drive isolation by environment. While \textit{C. pulchella} does appear to be locally adapted to historic climate (Bontrager and Angert, in prep), selection against foreign genotypes may not be strong enough to preempt the spread of neutral loci, even as recently-arrived loci that confer poor performance in a given environment are purged. This could lead to a signal of isolation by distance at neutral loci, while populations are still adaptively differentiated based on their local climate.
+
+It is possible that the absence of an effect of temperature and precipitation differences on genetic structure is the result of our experimental design, and that environmental differences might matter in other contexts. There may be environmental variables other than those we have considered here that are more important in determining the movement of genes or the realized rate of gene flow among populations. These could be climatic, but also could include soil characteristics, or local adaptation to competitors, pollinators, or soil biota. It is also possible that the effects of environmental differences are more detectable at smaller spatial scales. For example, in some plant species, differences in phenological timing along local snowmelt gradients structure gene flow to a greater extent than geographic distances \citep{hirao2004landscape, shimono2009morphological}. Similar processes may play out in \textit{C. pulchella} as well, possibly along local elevation gradients.
+
+\subsection*{Populations are admixtures of northern and southern genetic groups}
+
+Rather than mountain ranges separating populations into genetic groups, we detected underlying population structure that divides the species into northern and southern groups, with admixed populations in the middle. This suggests that perhaps the Columbia Basin, a low-elevation, relatively flat area in south-central Washington (\autoref{map_fig_popgen}), is a barrier to gene flow in this species. Species distribution models indicate that it is an area of low suitability (Chapter 1) and few occurrences of \textit{Clarkia pulchella} have been recorded in this region. Most studies of population genetic structure in the Pacific Northwest focus on mesic forest species that occupy the wet western slopes of both the coastal and Rocky Mountains \citep{shafer2010glaciers}, and these studies often find differentiation between western and eastern populations. Phylogeographic research on species occupying the arid inter-mountain region is less common. In the Great Basin pocketmouse, a species with a range that overlaps with that of \textit{C. pulchella}, a north-south split in genetic structure was detected in approximately the same location as in our results \citep{riddle2014cryptic}. It is possible that the Columbia Basin (or some geographic feature within it) represents a barrier to gene flow, either past or ongoing, for a variety of taxa that occupy the dry intermountain region. The habitat affinity of species can influence the effect of glaciation events on genetic structure \citep{massatti2014microhabitat}, therefore further work on \textit{C. pulchella}, including paleoclimate modelling or modelling demographic history, might allow for an interesting contrast with the relatively well-studied mesic flora of the Pacific Northwest. 
+
+\subsection*{Genetic diversity increases with latitude}
+
+We expected we would see lower genetic diversity at higher latitudes, but we detected the opposite: genetic diversity was highest in north-central and northern populations (though the total magnitude of variation in expected heterozygosity was not large). This latitudinal pattern is somewhat surprising, because northern populations are in areas that were under glaciers during the last glacial maximum, and we expected that range expansion into this area after their retreat would result in a signature of lower genetic diversity. When high levels of genetic diversity are present in areas of past range expansion, this can sometimes be attributed to the mixing of populations that had previously been persisting in multiple refugia \citep{petit2003glacial, brunsfeld2005multi}. Species in the northern Rocky Mountains that are presumed to have occupied multiple refugia often exhibit some degree of contemporary differentiation between northern and southern populations \citep{brunsfeld2001comparative, brunsfeld2005multi}, a pattern consistent with what we have found in \textit{Clarkia pulchella}. Regardless of the location or number of refugia that \textit{C. pulchella} previously occupied, it is also possible that range expansion was not accompanied by reductions in genetic diversity in this species, as is sometimes the case in other systems \citep{vandepitte2017retention}.
+
+The more common expectation for geographic patterns in genetic diversity is that range edge populations will have lower genetic diversity \citep{vucetich2003spatial}. This prediction is based on the assumption of an abundant center distribution pattern, in which edge populations are small, and may experience frequent turnover or constant directional selection (if they are far from the phenotypic optima of an extreme environment). Our results are not consistent with this being the case for \textit{C. pulchella}, at least not at all range edges. We note however that populations at southern and eastern edges do appear to have lower genetic diversity relative to the northern and north-central populations, and further work could be done to investigate the processes that might generate this pattern.  
+
+\subsection*{Conclusions}
+
+Our investigation of the genetic structure of \textit{Clarkia pulchella} has revealed some intuitive patterns, as well as surprising ones. Despite substantial heterogeneity in climate across the species' range, genetic similarity is primarily determined by geographic proximity. Though a signal of isolation by distance is not surprising in a sessile organism studied at a large spatial scale, the absence of any effect of environment indicates that to the extent that populations experience gene flow, it may be from both similar and divergent environments. This species does not exhibit geographic patterns of genetic diversity consistent with our expectations for a recently expanded northern range edge nor a range limited by adaptation. These results would be complemented by future work examining mechanisms of contemporary gene flow and historic demographic processes in \textit{Clarkia pulchella}.
+
+
+\subsection*{Acknowledgements}
+
+We would like to thank C. Caseys and M. Todesco for their generous guidance and training during library preparation. G. Owens provided helpful advice on bioinformatics methods. E. Fitz assisted with locating populations of \textit{C. pulchella} in the field and A. Wilkinson assisted with plant cultivation. We appreciate thoughtful comments on the manuscript from S. Aitken, M. Whitlock, and J. Whitton. Funding for this project was provided by the Washington Native Plant Society, the Botanical Society of America and the Botanical Society of America Genetics Section, and a National Sciences and Engineering Research Council Discovery Grant to ALA. MB was supported by a University of British Columbia Four-year Fellowship. 
+
+\subsection*{Author contributions}
+
+MB conceived of the project in consultation with ALA. MB performed all field work, lab work, bioinformatics, and analyses with guidance from ALA. MB generated all figures and tables and wrote the manuscript with frequent conversation and comments from ALA. 
+
+\subsection*{Data accessibility}
+
+Data and code are hosted on Github at https://github.com/meganbontrager/clarkia-pulchella-popgen and will be archived on Dryad or a similar repository upon publication. Sequences are archived on the NCBI Sequence Read Archive (SUB4307183).
+
+\clearpage
+
+\bibliography{biblio}
+
+
+\clearpage
+
+\begin{table}[ht]
+\centering
+\caption[Results of partial Mantel tests of pairwise differences]{Results of partial Mantel tests of pairwise geographic distance (km), pairwise temperature differences (\si{\degree}C, September-July, 1951-1980 averages), and pairwise precipitation differences (mm, April-July, 1951-1980 averages) on pairwise genetic differentiation (F\textsubscript{ST}) among populations of \textit{Clarkia pulchella}. Climate data are 1951-1980 averages from PRISM \citep{PRISM}.}
+\label{mantel}
+\begin{tabular}{lrrlrrr}
+\toprule
+Region & R\textsuperscript{2}	& \textit{P}-value & Predictor & Coefficient & t-statistic & \textit{P}-value \\
+\midrule
+Entire  &	0.42 &	\textbf{0.001} &	Geographic distance &	0.0002 &	15.73 &	\textbf{0.001} \\
+range	&	&	& Temperature differences &	0.0028 &	1.44 &	0.486 \\
+	&	&	& Precipitation differences &	0.0006 &	2.46 &	0.209 \\
+\midrule
+North	& 0.36 &	\textbf{0.008} &	Geographic distance &	0.0006 &	4.65 &	\textbf{0.006} \\
+	&	&	&	Temperature differences &	0.0061 &	1.63 &	0.377 \\
+	&	&	&	Precipitation differences &	0.0004 &	0.57 &	0.692 \\
+\midrule
+Center &	0.44 &	0.06 &	Geographic distance &	0.0006 &	4.87 &	\textbf{0.001} \\
+	&	&	&	Temperature differences &	0.0111 &	0.56 &	0.463 \\
+	&	&	&	Precipitation differences &	-0.0005 &	-0.45 &	0.737 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption[Covariance contributions of each layer in conStruct models]{Covariance contributions of each layer in conStruct models with the number of layers (K) set to 1, 2, 3, 4, or 5.}
+\label{layer_contributions}
+\begin{tabular}{lrrrrr}
+\toprule
+Number of layers & 1 & 2 & 3 & 4 & 5 \\
+\midrule
+\multirow{5}{*}{Layer contributions} & 1.000	& 0.9004	 &	0.8062    &	0.8014	&	0.8925 \\
+& -	  &	0.0996   &	0.1043	  &	0.1541	&	0.0795 \\
+& -	  &	-	     &	0.0895	  &	0.0438	&	0.0204 \\
+& -	  &	-	     &	-	      &	0.0007  &	0.0055 \\
+& -	  &	-	     &	-	      &	-	    &	0.0021 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=14cm]{figs/map_elev.pdf}
+\caption[The geographic range of \textit{Clarkia pulchella} and sampling locations]{The geographic range of \textit{Clarkia pulchella} across the interior of the Pacific Northwest. Small open points mark the locations of all herbarium records of \textit{C. pulchella} from the Consortium of Pacific Northwest Herbaria that could be accurately assigned coordinates. The dashed line marks the maximum convex polygon drawn around these points. Larger filled points are populations that were sampled for this project. Labels correspond to population IDs in \autoref{pops_tab}. Background shading shows elevation. The Columbia Basin is the unsampled area west of population D11.}
+\label{map_fig_popgen}
+\end{figure}
+
+\begin{landscape}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=21cm]{figs/climate_geo.pdf}
+\caption[Relationships of climate and geography across the range of \textit{Clarkia pulchella}]{Relationships of climate and geography across the range of \textit{Clarkia pulchella}. Small points represent all herbarium localities of \textit{C. pulchella}, larger outlined points represent populations included in this study. Points are colored according to elevation. Temperature is influenced by \textbf{(A)} latitude, \textbf{(B)} longitude, and \textbf{(C)} elevation. Precipitation is also influenced by \textbf{(D)} latitude, \textbf{(E)} longitude, and \textbf{(F)} elevation. However, the interaction of these drivers results in climate that is heterogeneous across space.  Climate data are 1951-1980 averages from PRISM \citep{PRISM}. Trend  lines are slopes from linear regression.}
+\label{clim_geo}
+\end{figure}
+\end{landscape}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{figs/fst_clim_dist.pdf}
+\caption[Pairwise genetic differentiation vs. geographic distance]{Pairwise genetic differentiation (F\textsubscript{ST}) of populations of \textit{Clarkia pulchella} increases with geographic distance (x-axis in \textbf{A} and \textbf{B}), but shows no discernible relationship to temperature differences (color in \textbf{A}) or precipitation differences (color in \textbf{B}). An alternative visualization is presented in \textbf{(C)} and \textbf{(D)}, in which climate differences are plotted on the x-axis and geographic distance is indicated with color. Climate data are 1951-1980 averages from PRISM \citep{PRISM}.}
+\label{fst_main_popgen}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=7cm]{figs/xval_results.pdf}
+\caption[Results of conStruct cross validation]{Results of 100 replicate cross-validation runs of conStruct with the number of layers set to 1, 2, 3, 4, or 5. In each replicate, the model is built using 90\% of loci, and the log-likelihood of the remaining loci is calculated. Predictive accuracy is then calculated as the difference in log-likelihood between each model and the best model (i.e. the best number of layers) in each replicate. These results indicate that models constructed with two layers are best, because they provide as much explanatory power as other models without further complexity.}
+\label{construct_xval}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=15cm]{figs/construct_main_fig.pdf}
+\caption[Admixture proportions of each of 32 populations of \textit{Clarkia pulchella}]{Admixture proportions of each of 32 populations of \textit{Clarkia pulchella} estimated from by conStruct with K = 2. \textbf{A} Admixture proportions are shown in geographic space and \textbf{(B)} arranged by latitude . Population ID codes are consistent with \autoref{pops_tab} and \autoref{map_fig_popgen}.}
+\label{construct_main}
+\end{figure}
+
+% \begin{landscape}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=16cm]{figs/het_map.pdf}
+\caption[Expected heterozygosity across the range of \textit{Clarkia pulchella}]{\textbf{(A)} Expected heterozygosity increases with latitude across the range of \textit{Clarkia pulchella}. \textbf{(B)} Expected heterozygosity appears to be higher in central and northern parts of the range, but lower in the south and east.}
+\label{het_map}
+\end{figure}
+% \end{landscape}
+
+\clearpage
+
+
+\beginsupplement
+
+\begin{table}[ht]
+\centering
+\caption[Geographic information for populations included in population genetic analyses]{Geographic locations and elevations of populations of \textit{Clarkia pulchella} included in these analyses. Population IDs are consistent with \autoref{map_fig_popgen}. The populations included in analyses of geographic subsets are indicated.}
+\label{pops_tab}
+\begin{tabular}{llrrr}
+\toprule
+Population ID	& Geographic subset &	Latitude & Longitude & Elevation (m) \\
+\midrule
+F1  & North   &	49.05 &	-119.56 &	842  \\
+F2  &	North   &	49.04 &	-119.05 &	866  \\
+D1  &	North   &	48.98 &	-118.99 &	1211 \\
+D2  &	North   &	48.94 &	-118.51 &	911  \\
+P1  &	North   &	48.93 &	-117.59 &	665  \\
+P2  &	North   &	48.92 &	-118.20 &	478  \\
+P3  &	North   &	48.91 &	-118.25 &	679  \\
+P4  &	North   &	48.87 &	-118.77 &	955  \\
+D3  &	North   &	48.83 &	-118.83 &	1603 \\
+P5  &	North   &	48.79 &	-118.18 &	681  \\
+D4  &	North   &	48.76 &	-118.33 &	1115 \\
+P6  &	North   &	48.55 &	-118.74 &	696  \\
+D5  &	North   &	48.54 &	-118.91 &	1126 \\
+P7  &	North   &	48.50 &	-119.01 &	949  \\
+P8  &	-       &	48.31 &	-115.84 &	963  \\
+P9  &	Center  &	47.51 &	-116.67 &	691  \\
+D6  &	-	      & 47.45 &	-114.77 &	1103 \\
+D7  &	Center  &	47.34 &	-116.79 &	801  \\
+P10 &	-	      & 47.24 &	-115.76 &	788  \\
+D8  &	Center	& 47.09 &	-116.98 &	1186 \\
+P11 &	Center	& 47.03 &	-117.30 &	1068 \\
+P12 &	-       &	46.83 &	-113.97 &	1097 \\
+D9  &	-       &	46.80 &	-114.41 &	1201 \\
+P13 &	Center  &	46.74 &	-116.71 &	768  \\
+D10 &	-       &	46.54 &	-113.89 &	1424 \\
+D11 &	Center  &	46.28 &	-117.60 &	1457 \\
+P14 &	Center  &	46.24 &	-117.49 &	1445 \\
+D12 &	Center  &	46.24 &	-117.74 &	1022 \\
+D13 &	Center  &	45.74 &	-118.25 &	649  \\
+P15 &	-	      & 44.47 &	-120.71 &	1128 \\
+P16 &	-       &	44.38 &	-120.52 &	1134 \\
+P17 &	-       &	43.30 &	-117.27 &	1043 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=14cm]{figs/bedassle_main.pdf}
+\caption[Effect sizes of temperature and precipitation vs. geographic distance]{Marginal posterior distributions, median values (solid lines) and 95\% credible intervals (dashed lines) of the ratio of the effect sizes of \textbf{(A)} temperature vs. geographic distance and \textbf{(B)} spring/summer precipitation vs. geographic distance on genetic differentiation of populations of \textit{Clarkia pulchella} after a burn-in of 20\%.}
+\label{bedassle_main}
+\end{figure}
+
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=16cm]{figs/fst_clim_dist_north.pdf}
+\caption[Pairwise differences and genetic differentiation among northern populations]{Relationship between pairwise geographic distance (x-axis in \textbf{A} and \textbf{B}), temperature differences (color in \textbf{A}) or precipitation differences (color in \textbf{B}), and genetic differentiation (F\textsubscript{ST}) among populations in the northern part of the geographic range of \textit{Clarkia pulchella}. An alternative visualization is presented in \textbf{(C)} and \textbf{(D)}, in which climate differences are plotted on the x-axis and geographic distance is indicated with color.  Climate data are 1951-1980 averages from PRISM \citep{PRISM}.}
+\label{fst_north}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=16cm]{figs/fst_clim_dist_center.pdf}
+\caption[Pairwise differences and genetic differentiation among central populations]{Relationship between pairwise geographic distance (x-axis in \textbf{A} and \textbf{B}), temperature differences (color in \textbf{A}) or precipitation differences (color in \textbf{B}), and genetic differentiation (F\textsubscript{ST}) among populations in the central part of the geographic range of \textit{Clarkia pulchella}. An alternative visualization is presented in \textbf{(C)} and \textbf{(D)}, in which climate differences are plotted on the x-axis and geographic distance is indicated with color.  Climate data are 1951-1980 averages from PRISM \citep{PRISM}.}
+\label{fst_center}
+\end{figure}
+
+\clearpage
+
+
+\end{document}

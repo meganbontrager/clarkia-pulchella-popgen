@@ -1,0 +1,338 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Beatty and Provan}{Beatty and
+  Provan}{2011}]{beatty2011phylogeographic}
+Beatty, G.~E. and J.~Provan (2011).
+\newblock Phylogeographic analysis of {N}orth {A}merican populations of the
+  parasitic herbaceous plant \textit{{M}onotropa hypopitys} {L}. reveals a
+  complex history of range expansion from multiple late glacial refugia.
+\newblock {\em Journal of Biogeography\/}~{\em 38\/}(8), 1585--1599.
+
+\bibitem[\protect\citeauthoryear{Bolnick, Snowberg, Patenia, Stutz, Ingram, and
+  Lau}{Bolnick et~al.}{2009}]{bolnick2009phenotype}
+Bolnick, D.~I., L.~K. Snowberg, C.~Patenia, W.~E. Stutz, T.~Ingram, and O.~L.
+  Lau (2009).
+\newblock Phenotype-dependent native habitat preference facilitates divergence
+  between parapatric lake and stream stickleback.
+\newblock {\em Evolution\/}~{\em 63\/}(8), 2004--2016.
+
+\bibitem[\protect\citeauthoryear{Booth, Troost, Clague, and Waitt}{Booth
+  et~al.}{2003}]{booth2003cordilleran}
+Booth, D.~B., K.~G. Troost, J.~J. Clague, and R.~B. Waitt (2003).
+\newblock The {C}ordilleran ice sheet.
+\newblock {\em Developments in Quaternary Sciences\/}~{\em 1}, 17--43.
+
+\bibitem[\protect\citeauthoryear{Bradburd, Coop, and Ralph}{Bradburd
+  et~al.}{2017}]{bradburd2017inferring}
+Bradburd, G., G.~Coop, and P.~Ralph (2017).
+\newblock Inferring continuous and discrete population genetic structure across
+  space.
+\newblock {\em bioRxiv\/}, 189688.
+
+\bibitem[\protect\citeauthoryear{Bradburd, Ralph, and Coop}{Bradburd
+  et~al.}{2013}]{bradburd2013disentangling}
+Bradburd, G.~S., P.~L. Ralph, and G.~M. Coop (2013).
+\newblock Disentangling the effects of geographic and ecological isolation on
+  genetic differentiation.
+\newblock {\em Evolution\/}~{\em 67\/}(11), 3258--3273.
+
+\bibitem[\protect\citeauthoryear{Brunsfeld, Sullivan, Soltis, and
+  Soltis}{Brunsfeld et~al.}{2001}]{brunsfeld2001comparative}
+Brunsfeld, S., J.~Sullivan, D.~Soltis, and P.~Soltis (2001).
+\newblock Comparative phylogeography of northwestern {N}orth {A}merica: a
+  synthesis.
+\newblock {\em Special Publication--British Ecological Society\/}~{\em 14},
+  319--340.
+
+\bibitem[\protect\citeauthoryear{Brunsfeld and Sullivan}{Brunsfeld and
+  Sullivan}{2005}]{brunsfeld2005multi}
+Brunsfeld, S.~J. and J.~Sullivan (2005).
+\newblock A multi-compartmented glacial refugium in the northern {R}ocky
+  {M}ountains: evidence from the phylogeography of \textit{{C}ardamine
+  constancei} ({B}rassicaceae).
+\newblock {\em Conservation Genetics\/}~{\em 6\/}(6), 895--904.
+
+\bibitem[\protect\citeauthoryear{Carstens, Brennan, Chua, Duffie, Harvey, Koch,
+  McMahan, Nelson, Newman, Satler, et~al.}{Carstens
+  et~al.}{2013}]{carstens2013model}
+Carstens, B.~C., R.~S. Brennan, V.~Chua, C.~V. Duffie, M.~G. Harvey, R.~A.
+  Koch, C.~D. McMahan, B.~J. Nelson, C.~E. Newman, J.~D. Satler, et~al. (2013).
+\newblock Model selection as a tool for phylogeographic inference: an example
+  from the willow \textit{{S}alix melanopsis}.
+\newblock {\em Molecular Ecology\/}~{\em 22\/}(15), 4014--4028.
+
+\bibitem[\protect\citeauthoryear{Catchen, Hohenlohe, Bassham, Amores, and
+  Cresko}{Catchen et~al.}{2013}]{catchen2013stacks}
+Catchen, J., P.~A. Hohenlohe, S.~Bassham, A.~Amores, and W.~A. Cresko (2013).
+\newblock Stacks: an analysis tool set for population genomics.
+\newblock {\em Molecular Ecology\/}~{\em 22\/}(11), 3124--3140.
+
+\bibitem[\protect\citeauthoryear{Catchen, Amores, Hohenlohe, Cresko, and
+  Postlethwait}{Catchen et~al.}{2011}]{catchen2011stacks}
+Catchen, J.~M., A.~Amores, P.~Hohenlohe, W.~Cresko, and J.~H. Postlethwait
+  (2011).
+\newblock Stacks: building and genotyping loci de novo from short-read
+  sequences.
+\newblock {\em G3: Genes, Genomes, Genetics\/}~{\em 1\/}(3), 171--182.
+
+\bibitem[\protect\citeauthoryear{Epps, Palsb{\o}ll, Wehausen, Roderick, Ramey,
+  and McCullough}{Epps et~al.}{2005}]{epps2005highways}
+Epps, C.~W., P.~J. Palsb{\o}ll, J.~D. Wehausen, G.~K. Roderick, R.~R. Ramey,
+  and D.~R. McCullough (2005).
+\newblock Highways block gene flow and cause a rapid decline in genetic
+  diversity of desert bighorn sheep.
+\newblock {\em Ecology Letters\/}~{\em 8\/}(10), 1029--1038.
+
+\bibitem[\protect\citeauthoryear{Goudet and Jombart}{Goudet and
+  Jombart}{2015}]{hierfstat}
+Goudet, J. and T.~Jombart (2015).
+\newblock hierfstat: {E}stimation and tests of hierarchical {F}-statistics.
+\newblock R package version 0.04-22.
+
+\bibitem[\protect\citeauthoryear{Guillot and Rousset}{Guillot and
+  Rousset}{2013}]{guillot2013dismantling}
+Guillot, G. and F.~Rousset (2013).
+\newblock Dismantling the {M}antel tests.
+\newblock {\em Methods in Ecology and Evolution\/}~{\em 4\/}(4), 336--344.
+
+\bibitem[\protect\citeauthoryear{Hewitt}{Hewitt}{2004}]{hewitt2004genetic}
+Hewitt, G. (2004).
+\newblock Genetic consequences of climatic oscillations in the {Q}uaternary.
+\newblock {\em Philosophical Transactions of the Royal Society B: Biological
+  Sciences\/}~{\em 359\/}(1442), 183--195.
+
+\bibitem[\protect\citeauthoryear{Hirao and Kudo}{Hirao and
+  Kudo}{2004}]{hirao2004landscape}
+Hirao, A. and G.~Kudo (2004).
+\newblock Landscape genetics of alpine-snowbed plants: comparisons along
+  geographic and snowmelt gradients.
+\newblock {\em Heredity\/}~{\em 93\/}(3), 290.
+
+\bibitem[\protect\citeauthoryear{Kirkpatrick and Barton}{Kirkpatrick and
+  Barton}{1997}]{kirkpatrick1997evolution}
+Kirkpatrick, M. and N.~H. Barton (1997).
+\newblock Evolution of a species' range.
+\newblock {\em The American Naturalist\/}~{\em 150\/}(1), 1--23.
+
+\bibitem[\protect\citeauthoryear{Kuchta and Tan}{Kuchta and
+  Tan}{2005}]{kuchta2005isolation}
+Kuchta, S.~R. and A.-M. Tan (2005).
+\newblock Isolation by distance and post-glacial range expansion in the
+  rough-skinned newt, \textit{{T}aricha granulosa}.
+\newblock {\em Molecular Ecology\/}~{\em 14\/}(1), 225--244.
+
+\bibitem[\protect\citeauthoryear{Lee, Jo, Park, Friedman, and Olson}{Lee
+  et~al.}{2018}]{lee2018population}
+Lee, S.-R., Y.-S. Jo, C.-H. Park, J.~M. Friedman, and M.~S. Olson (2018).
+\newblock Population genomic analysis suggests strong influence of river
+  network on spatial distribution of genetic variation in invasive saltcedar
+  across the southwestern {U}nited {S}tates.
+\newblock {\em Molecular Ecology\/}~{\em 27\/}(3), 636--646.
+
+\bibitem[\protect\citeauthoryear{Massatti and Knowles}{Massatti and
+  Knowles}{2014}]{massatti2014microhabitat}
+Massatti, R. and L.~L. Knowles (2014).
+\newblock Microhabitat differences impact phylogeographic concordance of
+  codistributed species: Genomic evidence in montane sedges (\textit{{C}arex}
+  {L}.) from the {R}ocky {M}ountains.
+\newblock {\em Evolution\/}~{\em 68\/}(10), 2833--2846.
+
+\bibitem[\protect\citeauthoryear{Matvienko, Kozik, Froenicke, Lavelle,
+  Martineau, Perroud, and Michelmore}{Matvienko
+  et~al.}{2013}]{matvienko2013consequences}
+Matvienko, M., A.~Kozik, L.~Froenicke, D.~Lavelle, B.~Martineau, B.~Perroud,
+  and R.~Michelmore (2013).
+\newblock Consequences of normalizing transcriptomic and genomic libraries of
+  plant genomes using a duplex-specific nuclease and tetramethylammonium
+  chloride.
+\newblock {\em PLoS One\/}~{\em 8\/}(2), e55913.
+
+\bibitem[\protect\citeauthoryear{McRae}{McRae}{2006}]{mcrae2006isolation}
+McRae, B.~H. (2006).
+\newblock Isolation by resistance.
+\newblock {\em Evolution\/}~{\em 60\/}(8), 1551--1561.
+
+\bibitem[\protect\citeauthoryear{Mosca, Eckert, Di~Pierro, Rocchini, La~Porta,
+  Belletti, and Neale}{Mosca et~al.}{2012}]{mosca2012geographical}
+Mosca, E., A.~Eckert, E.~Di~Pierro, D.~Rocchini, N.~La~Porta, P.~Belletti, and
+  D.~Neale (2012).
+\newblock The geographical and environmental determinants of genetic diversity
+  for four alpine conifers of the {E}uropean {A}lps.
+\newblock {\em Molecular Ecology\/}~{\em 21\/}(22), 5530--5545.
+
+\bibitem[\protect\citeauthoryear{Nei}{Nei}{1987}]{nei1987molecular}
+Nei, M. (1987).
+\newblock {\em Molecular Evolutionary Genetics}.
+\newblock Columbia University Press.
+
+\bibitem[\protect\citeauthoryear{Nosil, Vines, and Funk}{Nosil
+  et~al.}{2005}]{nosil2005perspective}
+Nosil, P., T.~H. Vines, and D.~J. Funk (2005).
+\newblock Perspective: reproductive isolation caused by natural selection
+  against immigrants from divergent habitats.
+\newblock {\em Evolution\/}~{\em 59\/}(4), 705--719.
+
+\bibitem[\protect\citeauthoryear{Petit, Aguinagalde, de~Beaulieu, Bittkau,
+  Brewer, Cheddadi, Ennos, Fineschi, Grivet, Lascoux, et~al.}{Petit
+  et~al.}{2003}]{petit2003glacial}
+Petit, R.~J., I.~Aguinagalde, J.-L. de~Beaulieu, C.~Bittkau, S.~Brewer,
+  R.~Cheddadi, R.~Ennos, S.~Fineschi, D.~Grivet, M.~Lascoux, et~al. (2003).
+\newblock Glacial refugia: hotspots but not melting pots of genetic diversity.
+\newblock {\em Science\/}~{\em 300\/}(5625), 1563--1565.
+
+\bibitem[\protect\citeauthoryear{Poland, Brown, Sorrells, and Jannink}{Poland
+  et~al.}{2012}]{poland2012development}
+Poland, J.~A., P.~J. Brown, M.~E. Sorrells, and J.-L. Jannink (2012).
+\newblock Development of high-density genetic maps for barley and wheat using a
+  novel two-enzyme genotyping-by-sequencing approach.
+\newblock {\em PloS One\/}~{\em 7\/}(2), e32253.
+
+\bibitem[\protect\citeauthoryear{{PRISM Climate Group}}{{PRISM Climate
+  Group}}{2017}]{PRISM}
+{PRISM Climate Group} (2017).
+\newblock Oregon state university.
+\newblock Accessed: 2017-09-30.
+
+\bibitem[\protect\citeauthoryear{Pritchard, Stephens, and Donnelly}{Pritchard
+  et~al.}{2000}]{pritchard2000inference}
+Pritchard, J.~K., M.~Stephens, and P.~Donnelly (2000).
+\newblock Inference of population structure using multilocus genotype data.
+\newblock {\em Genetics\/}~{\em 155\/}(2), 945--959.
+
+\bibitem[\protect\citeauthoryear{{R Core Team}}{{R Core Team}}{2017}]{Rcore}
+{R Core Team} (2017).
+\newblock {\em R: a language and environment for statistical computing, version
+  3.4.4}.
+\newblock Vienna, Austria: R Foundation for Statistical Computing.
+
+\bibitem[\protect\citeauthoryear{Reeves and Richards}{Reeves and
+  Richards}{2014}]{reeves2014effect}
+Reeves, P.~A. and C.~M. Richards (2014).
+\newblock Effect of a geographic barrier on adaptation in the dwarf sunflower
+  (\textit{{H}elianthus pumilus} {N}utt.).
+\newblock {\em International Journal of Plant Sciences\/}~{\em 175\/}(6),
+  688--701.
+
+\bibitem[\protect\citeauthoryear{Revell}{Revell}{2012}]{phytools}
+Revell, L.~J. (2012).
+\newblock phytools: An {R} package for phylogenetic comparative biology (and
+  other things).
+\newblock {\em Methods in Ecology and Evolution\/}~{\em 3}, 217--223.
+
+\bibitem[\protect\citeauthoryear{Riddle, Jezkova, Eckstut, Ol{\'a}h-Hemmings,
+  and Carraway}{Riddle et~al.}{2014}]{riddle2014cryptic}
+Riddle, B.~R., T.~Jezkova, M.~E. Eckstut, V.~Ol{\'a}h-Hemmings, and L.~N.
+  Carraway (2014).
+\newblock Cryptic divergence and revised species taxonomy within the {G}reat
+  {B}asin pocket mouse, \textit{{P}erognathus parvus} ({P}eale, 1848), species
+  group.
+\newblock {\em Journal of Mammalogy\/}~{\em 95\/}(1), 9--25.
+
+\bibitem[\protect\citeauthoryear{Rochette and Catchen}{Rochette and
+  Catchen}{2017}]{rochette2017deriving}
+Rochette, N.~C. and J.~M. Catchen (2017).
+\newblock Deriving genotypes from {RAD}-seq short-read data using {S}tacks.
+\newblock {\em Nature Protocols\/}~{\em 12\/}(12), 2640.
+
+\bibitem[\protect\citeauthoryear{Sexton, Hangartner, and Hoffmann}{Sexton
+  et~al.}{2014}]{sexton2014genetic}
+Sexton, J.~P., S.~B. Hangartner, and A.~A. Hoffmann (2014).
+\newblock Genetic isolation by environment or distance: which pattern of gene
+  flow is most common?
+\newblock {\em Evolution\/}~{\em 68\/}(1), 1--15.
+
+\bibitem[\protect\citeauthoryear{Sexton, Strauss, and Rice}{Sexton
+  et~al.}{2011}]{sexton2011gene}
+Sexton, J.~P., S.~Y. Strauss, and K.~J. Rice (2011).
+\newblock Gene flow increases fitness at the warm edge of a species range.
+\newblock {\em Proceedings of the National Academy of Sciences\/}~{\em
+  108\/}(28), 11704--11709.
+
+\bibitem[\protect\citeauthoryear{Shafer, Cullingham, Cote, and Coltman}{Shafer
+  et~al.}{2010}]{shafer2010glaciers}
+Shafer, A., C.~I. Cullingham, S.~D. Cote, and D.~W. Coltman (2010).
+\newblock Of glaciers and refugia: a decade of study sheds new light on the
+  phylogeography of northwestern {N}orth {A}merica.
+\newblock {\em Molecular Ecology\/}~{\em 19\/}(21), 4589--4621.
+
+\bibitem[\protect\citeauthoryear{Shagina, Bogdanova, Mamedov, Lebedev,
+  Lukyanov, Shagin, et~al.}{Shagina et~al.}{2010}]{shagina2010normalization}
+Shagina, I., E.~Bogdanova, I.~Z. Mamedov, Y.~Lebedev, S.~Lukyanov, D.~Shagin,
+  et~al. (2010).
+\newblock Normalization of genomic {DNA} using duplex-specific nuclease.
+\newblock {\em Biotechniques\/}~{\em 48\/}(6), 455.
+
+\bibitem[\protect\citeauthoryear{Shimono, Watanabe, Hirao, Wada, and
+  Kudo}{Shimono et~al.}{2009}]{shimono2009morphological}
+Shimono, Y., M.~Watanabe, A.~S. Hirao, N.~Wada, and G.~Kudo (2009).
+\newblock Morphological and genetic variations of \textit{{P}otentilla
+  matsumurae} ({R}osaceae) between fellfield and snowbed populations.
+\newblock {\em American Journal of Botany\/}~{\em 96\/}(4), 728--737.
+
+\bibitem[\protect\citeauthoryear{Slatkin}{Slatkin}{1973}]{slatkin1973gene}
+Slatkin, M. (1973).
+\newblock Gene flow and selection in a cline.
+\newblock {\em Genetics\/}~{\em 75\/}(4), 733--756.
+
+\bibitem[\protect\citeauthoryear{Slatkin}{Slatkin}{1993}]{slatkin1993isolation}
+Slatkin, M. (1993).
+\newblock Isolation by distance in equilibrium and non-equilibrium populations.
+\newblock {\em Evolution\/}~{\em 47\/}(1), 264--279.
+
+\bibitem[\protect\citeauthoryear{Sproul, Houston, Nelson, Evans, Crandall, and
+  Shiozawa}{Sproul et~al.}{2015}]{sproul2015climate}
+Sproul, J.~S., D.~D. Houston, C.~R. Nelson, R.~P. Evans, K.~A. Crandall, and
+  D.~K. Shiozawa (2015).
+\newblock Climate oscillations, glacial refugia, and dispersal ability: factors
+  influencing the genetic structure of the least salmonfly,
+  \textit{{P}teronarcella badia} ({P}lecoptera), in western {N}orth {A}merica.
+\newblock {\em BMC Evolutionary Biology\/}~{\em 15\/}(1), 279.
+
+\bibitem[\protect\citeauthoryear{Storfer, Murphy, Evans, Goldberg, Robinson,
+  Spear, Dezzani, Delmelle, Vierling, and Waits}{Storfer
+  et~al.}{2007}]{storfer2007putting}
+Storfer, A., M.~Murphy, J.~Evans, C.~Goldberg, S.~Robinson, S.~Spear,
+  R.~Dezzani, E.~Delmelle, L.~Vierling, and L.~Waits (2007).
+\newblock Putting the `landscape' in landscape genetics.
+\newblock {\em Heredity\/}~{\em 98\/}(3), 128.
+
+\bibitem[\protect\citeauthoryear{Vandepitte, Helsen, Van~Acker, Mergeay, and
+  Honnay}{Vandepitte et~al.}{2017}]{vandepitte2017retention}
+Vandepitte, K., K.~Helsen, K.~Van~Acker, J.~Mergeay, and O.~Honnay (2017).
+\newblock Retention of gene diversity during the spread of a non-native plant
+  species.
+\newblock {\em Molecular Ecology\/}~{\em 26\/}(12), 3141--3150.
+
+\bibitem[\protect\citeauthoryear{Vucetich and Waite}{Vucetich and
+  Waite}{2003}]{vucetich2003spatial}
+Vucetich, J.~A. and T.~A. Waite (2003).
+\newblock Spatial patterns of demography and genetic processes across the
+  species' range: null hypotheses for landscape conservation genetics.
+\newblock {\em Conservation Genetics\/}~{\em 4\/}(5), 639--645.
+
+\bibitem[\protect\citeauthoryear{Wang and Bradburd}{Wang and
+  Bradburd}{2014}]{wang2014isolation}
+Wang, I.~J. and G.~S. Bradburd (2014).
+\newblock Isolation by environment.
+\newblock {\em Molecular Ecology\/}~{\em 23\/}(23), 5649--5662.
+
+\bibitem[\protect\citeauthoryear{Weir and Cockerham}{Weir and
+  Cockerham}{1984}]{weir1984estimating}
+Weir, B.~S. and C.~C. Cockerham (1984).
+\newblock Estimating {F}-statistics for the analysis of population structure.
+\newblock {\em Evolution\/}~{\em 38\/}(6), 1358--1370.
+
+\bibitem[\protect\citeauthoryear{Wright}{Wright}{1943}]{wright1943isolation}
+Wright, S. (1943).
+\newblock Isolation by distance.
+\newblock {\em Genetics\/}~{\em 28\/}(2), 114--138.
+
+\bibitem[\protect\citeauthoryear{Zheng, Levine, Shen, Gogarten, Laurie, and
+  Weir}{Zheng et~al.}{2012}]{zheng2012high}
+Zheng, X., D.~Levine, J.~Shen, S.~M. Gogarten, C.~Laurie, and B.~S. Weir
+  (2012).
+\newblock A high-performance computing toolset for relatedness and principal
+  component analysis of {SNP} data.
+\newblock {\em Bioinformatics\/}~{\em 28\/}(24), 3326--3328.
+
+\end{thebibliography}
