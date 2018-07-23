@@ -1,0 +1,110 @@
+all_localities_prism.csv
+    all herbarium localities of clarkia pulchella and monthly prism data for 1951-1980
+    input to: construct.R, map_climate_plots.R, spatial_diversity.R
+    output from: NA (downloaded localities from consortium of pacific northwest herbaria, added field surveys, climate and elevation data from prism)
+        id      locality ID
+        long    longitude (decimal degrees)
+        lat     latitude (decimal degrees)
+        elev    elevation (meters)
+        date    month-year of data
+        ppt_mm  precipitation of that month in mm
+        tave    average temperature of that month in degrees C
+        
+allele_freqs.Rdata 
+    allele frequencies and sample sizes for all populations, bedassle inputs
+    input to: bedassle_main.R
+    output from: bedassle_dataprep.R
+        
+batch_1.plink.ped
+    input to: bedassle_dataprep.R, heirfstat_calcs.R
+    output from: stacks::populations (bioinformatics_scripts)
+    
+bed_inputs_center.Rdata
+    allele frequencies and sample sizes for central populations
+    input to: bedassle_main.R
+    output from: bedassle_dataprep.R
+    
+bed_inputs_north.Rdata
+    allele frequencies and sample sizes for northern populations
+    input to: bedassle_main.R
+    output from: bedassle_dataprep.R
+    
+construct_layer_contributions.csv
+    table of layer contributions 
+    input to: NA
+    output from: construct.R
+        each row is spatial or non-spatial k = 1-5
+        each column is contributions of layers 1-5
+    
+construct_matrix.Rdata
+    allele frequncies for each population, with NA when missing a genotype
+    input to: construct.R
+    output from: bedassle_dataprep.R
+    
+fst_wc.csv
+    pairwise fst 
+    input to: pairwise_matrices.R
+    output from: hierfstat_calcs.R
+        pairwise Fsts in matrix shape. IDs are defined in population_data.csv
+    
+pairwise_diffs.csv
+    tall dataframe of pairwise differences; each row represents one pair of populations
+    input to: fst_clim_dist_plots.R
+    output from: pairwise_matrices.R
+        pop1                  first population
+        pop2                  second population
+        fst                   pairwise Fst
+        distance_km           distance between pops in km
+        tave_prism_diff       temperature difference (sept-july, 1951-1980), absolute values, degrees C
+        ppt_spring_prism_diff precipitation difference (apr-july, 1951-1980), absolute values, mm
+        
+    
+pairwise_matrices.Rdata
+    pairwise matrices of fst, geographic distance, climatic differences
+    input to: bedassle_main.R, bedassle_dataprep.R, construct.R, partial_mantel.R
+    output from: pairwise_matrices.R 
+    
+pops_spatial_stats.csv
+    population distances to edge of range
+    input to: spatial_diversity.R  
+    output from: NA
+        popcode       population id
+        dist_to_edge  distance to range edge in km
+    
+pops_stats.csv
+    expected heterozygosity 
+    input to: spatial_diversity.R  
+    output from: hierfstat_calcs.R
+        pop       population id
+        fis       Fis 
+        exp_het   expected heterozygosity
+        obs_het   observed heterozygosity
+    
+population_data.csv
+    geographic info for populations 
+    input to: spatial_diversity.R, pairwise_matrices.R, partial_mantel.R, construct.R, fst_clim_dist_plots.R, bedassle_dataprep.R
+    output from: NA
+        popcode             population id used throughout analyses
+        fig_name            name used in figures and tables of papers
+        tave_5180_sep_jul   average temperature (sept-july, 1951-1980, degrees C)
+        ppt_mm_5180_apr_jul average precipitation (april-july, 1951-1980, mm)
+        cluster             manually assigned geographic cluster
+        lat                 latitude
+        long                longitude
+        elev                elevation (m)
+        
+representation.csv
+    average SNP representation by population
+    input to: spatial_diversity.R
+    output from: bedassle_dataprep.R
+        pop     population id
+        prop    proportion of loci represented
+    
+xval_summary.csv
+    results of conStruct cross validation
+    input to: construct.R
+    output from: construct.R
+        value     difference in log likelihood between that model and best model  
+        rep       replicate
+        sp_nsp    spatial or nonspatial model
+        layers    number of layers allowed

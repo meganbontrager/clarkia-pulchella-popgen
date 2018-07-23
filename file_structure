@@ -1,0 +1,117 @@
+file structure:
+  
+analysis_scripts
+  bedassle_dataprep.R
+    reformat plink .ped file for input into BEDASSLE and conStruct
+  bedassle_main.R  
+    run BEDASSLE
+  bedassle_plots.R   
+    plot marginal distributions of BEDASSLE effect estimates
+  construct.R  
+    run conStruct
+  fst_clim_dist_plots.R  
+    plot Fst differences against geographic distance and climate differences
+  hierfstat_calcs.R  
+    calculate Fst and expected heterozygosity beginning with plink .ped file
+  map_climate_plots.R  
+    make map figure and plot climate vs. geography
+  pairwise_matrices.R  
+    generate pairwise matrices of geographic and climatic distances, also make tall dataframe for plotting
+  partial_mantel.R  
+    run partial mantel tests
+  spatial_diversity.R  
+    run test and make plots of expected heterozygosity vs. geography
+  
+bedassle_output
+  output files from script bedassle_main.R   
+  
+bioinformatics_scripts
+  scripts 1-7
+    run components of the Stacks pipeline (Catchen et al. 2013)
+  fastqlist.txt
+    list of samples
+  population_map_slim.txt
+    matches samples with populations
+
+conStruct_output
+  output files from script construct.R
+
+data
+  *column descriptions can be found in column_descriptions.txt
+  
+  all_localities_prism.csv
+      all herbarium localities of clarkia pulchella and monthly prism data for 1951-1980
+      input to: construct.R, map_climate_plots.R, spatial_diversity.R
+      output from: NA (downloaded localities from consortium of pacific northwest herbaria, added field surveys, climate and elevation data from prism)
+    
+  allele_freqs.Rdata 
+      allele frequencies and sample sizes for all populations, bedassle inputs (generated with bedassle_dataprep.R)
+      input to: bedassle_main.R
+      output from: bedassle_dataprep.R
+    
+  batch_1.plink.ped
+      input to: bedassle_dataprep.R, heirfstat_calcs.R
+      output from: stacks::populations (bioinformatics_scripts)
+    
+  bed_inputs_center.Rdata
+      allele frequencies and sample sizes for central populations
+      input to: bedassle_main.R
+      output from: bedassle_dataprep.R
+      
+  bed_inputs_north.Rdata
+      allele frequencies and sample sizes for northern populations
+      input to: bedassle_main.R
+      output from: bedassle_dataprep.R
+    
+  construct_layer_contributions.csv
+      table of layer contributions 
+      input to: NA
+      output from: construct.R
+    
+  construct_matrix.Rdata
+      allele frequncies for each population, with NA when missing a genotype
+      input to: construct.R
+      output from: bedassle_dataprep.R
+    
+  fst_wc.csv
+      pairwise fst 
+      input to: pairwise_matrices.R
+      output from: hierfstat_calcs.R
+    
+  pairwise_diffs.csv
+      tall dataframe of pairwise differences; each row represents one pair of populations
+      input to: fst_clim_dist_plots.R
+      output from: pairwise_matrices.R
+    
+  pairwise_matrices.Rdata
+      pairwise matrices of fst, geographic distance, climatic differences
+      input to: bedassle_main.R, bedassle_dataprep.R, construct.R, partial_mantel.R
+      output from: pairwise_matrices.R 
+    
+  pops_spatial_stats.csv
+      population distances to edge of range
+      input to: spatial_diversity.R  
+      output from: NA
+    
+  pops_stats.csv
+      expected heterozygosity 
+      input to: spatial_diversity.R  
+      output from: hierfstat_calcs.R
+    
+  population_data.csv
+      geographic info for populations 
+      input to: spatial_diversity.R, pairwise_matrices.R, partial_mantel.R, construct.R, fst_clim_dist_plots.R, bedassle_dataprep.R
+      output from: NA
+    
+  representation.csv
+      input to: spatial_diversity.R
+      output from: bedassle_dataprep.R
+    
+  xval_summary.csv
+      results of conStruct cross validation
+      input to: construct.R
+      output from: construct.R
+
+figs
+  figures in manuscript, produced by analysis scripts  
+  
