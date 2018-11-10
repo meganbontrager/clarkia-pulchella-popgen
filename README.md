@@ -7,3 +7,5 @@ Megan Bontrager and Amy L. Angert
 Available on bioRxiv: https://doi.org/10.1101/374454  
 
 Description of files is in file_structure.txt
+Descriptions of column contents in data files are in column_descriptions.txt
+
